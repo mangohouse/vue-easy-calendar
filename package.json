@@ -3,7 +3,9 @@
     "version": "1.0.1",
     "description": "A Vue.js project",
     "author": "mango23 <314923884@qq.com>",
-    "private": true,
+    "private": false,
+    "main": "dist/vue-calendar.min.js",
+    "license": "MIT",
     "scripts": {
         "dev": "node build/dev-server.js",
         "start": "node build/dev-server.js",
@@ -86,6 +88,10 @@
         "webpack-dev-middleware": "^1.10.0",
         "webpack-hot-middleware": "^2.18.0",
         "webpack-merge": "^4.1.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mangohouse/vue-calendar-plugin"
     },
     "engines": {
         "node": ">= 4.0.0",
