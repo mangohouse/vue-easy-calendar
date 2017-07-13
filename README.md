@@ -2,8 +2,10 @@
 
 > vue 简单的日历选择控件
 还有一种日历选择模式，可通过tipsData属性绑定日历事件，进去当前事件日期会高亮显示，点击该日期可回传日历信息，可通过 setCalendar函数获取当前日历信息
-![image]('https://raw.githubusercontent.com/mangohouse/vue-easy-calendar/master/src/assets/rili.png')
+
 # github 地址：  https://github.com/mangohouse/vue-easy-calendar
+
+效果图：https://raw.githubusercontent.com/mangohouse/vue-easy-calendar/master/src/assets/rili.png
 #使用方法如下
 ```js
     npm install  vue-easy-calendar --save-dev

@@ -1,6 +1,6 @@
 <template>
     <div id="one" :tipsData="tipsData">
-        <input type="text" v-model="setDateValue" @click="calendarShow"  readonly :originDateValue="originDateValue">
+        <input type="text" v-model="setDateValue" @click="calendarShow" readonly :originDateValue="originDateValue">
         <div v-show="showCalendar" class="show-calendars">
             <div class="close" @click="closeCalendar">关闭</div>
             <div class="box">
@@ -36,10 +36,8 @@
 </template>
 
 <script>
-    import Picker from '../../static/js/picker.min.js'
     export default {
         name: 'datePicker',
-        // props: ['tipsData', 'originDateValue', 'endYear', 'startYear'],
         props: {
             tipsData: {
                 type: Object,
@@ -72,7 +70,7 @@
             }
         },
         methods: {
-            calendarShow(){
+            calendarShow() {
                 this.showCalendar = true
             },
             touchStart(e) {
@@ -81,11 +79,9 @@
             },
             touchEnd(e) {
                 if (this.clientX > e.changedTouches[0].clientX + 50) { //左滑
-                    console.log('left')
                     this.preMonth()
                 }
                 if (this.clientX < e.changedTouches[0].clientX - 50) { //右滑
-                    console.log('right')
                     this.nextMonth()
                 }
             },
@@ -219,6 +215,10 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    body {
+        margin: 0;
+    }
+    
     .box {
         width: 100%;
     }
@@ -341,6 +341,6 @@
         background: #fff;
         padding-top: 10px;
         height: 295px;
-        width: 98%;
+        width: 100%;
     }
 </style>
